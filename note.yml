@@ -1,0 +1,10 @@
+spring:
+  data:
+    rest:
+      base-uri: /api
+      base-path: /api
+  jpa:
+    generate-ddl: true
+
+note:
+  key: hello, ${info.id}!

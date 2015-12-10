@@ -1,0 +1,5 @@
+server:
+  port: 8761
+
+registry:
+  key: hello, ${info.id}!

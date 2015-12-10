@@ -1,0 +1,3 @@
+spring:
+  application:
+    name: ERROR! application name is require!

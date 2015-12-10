@@ -1,0 +1,5 @@
+server:
+  port: 8080
+
+proxy:
+  key: hello, ${info.id}!
