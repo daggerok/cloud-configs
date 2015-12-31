@@ -20,9 +20,9 @@ eureka:
     serviceUrl:
       defaultZone: ${EUREKA_SERVICE_URL:http://kostromin-mb.local:8761}/eureka/
   instance:
-    hostname: ${INSTANCE_IP:localhost}
-    nonSecurePort: ${INSTANCE_PORT:${PORT:${server.port:8080}}}
+    #hostname: ${INSTANCE_IP:localhost}
+    nonSecurePort: ${INSTANCE_PORT:${PORT:{SERVER_PORT:0}}}
     leaseRenewalIntervalInSeconds: 10
-    statusPageUrlPath: ${management.context-path}/info
-    healthCheckUrlPath: ${management.context-path}/health
+    statusPageUrlPath: ${management.context-path}/admin/info
+    healthCheckUrlPath: ${management.context-path}/admin/health
   password: secret
