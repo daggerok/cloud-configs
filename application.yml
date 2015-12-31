@@ -26,7 +26,7 @@ eureka:
     eurekaServerDNSName: kostromin-mb.local
     eurekaServerPort: 8761
     hostname: kostromin-mb.local
-    nonSecurePort: ${server.port}
+    nonSecurePort: ${local.server.port}
     leaseRenewalIntervalInSeconds: 10
     # statusPageUrlPath: ${management.context-path}/info
     # healthCheckUrlPath: ${management.context-path}/health
