@@ -6,7 +6,7 @@ info:
 
 management:
   context-path: /admin
-  port: ${server.port:0}
+  port: ${server.port}
 endpoints:
   enabled: true
 endpoints:
