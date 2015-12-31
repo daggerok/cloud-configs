@@ -4,15 +4,16 @@ server:
 info:
   id: ${spring.application.name}:${server.port}
 
+management:
+  context-path: /admin
+  port: ${PORT:${SERVER_PORT:${server.port:0}}}
+endpoints:
+  enabled: true
 endpoints:
   restart:
     enabled: true
   shutdown:
     enabled: true
-
-management:
-  context-path: /admin
-management.port: ${PORT:${SERVER_PORT:${server.port:0}}}
 
 debug: false
 
