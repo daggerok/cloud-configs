@@ -26,7 +26,11 @@ eureka:
   #   fetchRegistry: false
   #   serviceUrl:
       defaultZone: ${EUREKA_SERVICE_URL:http://kostromin-mb.local:8761}/eureka/
-  # instance:
+      registryFetchIntervalSeconds: 5
+  instance:
+    leaseRenewalIntervalInSeconds: 10
+    metadataMap:
+      instanceId: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${server.port}}}
   #   eurekaServerDNSName: kostromin-mb.local
   #   eurekaServerPort: 8761
   #   hostname: kostromin-mb.local
@@ -37,3 +41,8 @@ eureka:
   #   virtualHostName: ${spring.application.name}
   #   appname: ${spring.application.name}
   # password: secret
+    
+
+logging:
+  level:
+    com.netflix.discovery: 'OFF'
