@@ -12,6 +12,7 @@ endpoints:
 
 management:
   context-path: /admin
+management.port: ${PORT:${SERVER_PORT:${server.port:0}}}
 
 debug: false
 
