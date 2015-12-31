@@ -9,6 +9,8 @@ management:
   port: ${server.port}
 endpoints:
   enabled: true
+  actuator
+    enabled: true
   restart:
     enabled: true
   shutdown:
