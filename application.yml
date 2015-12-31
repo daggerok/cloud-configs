@@ -19,21 +19,21 @@ info:
 debug: false
 
 eureka:
-  server:
-    waitTimeInMsWhenSyncEmpty: 0
+  # server:
+  #   waitTimeInMsWhenSyncEmpty: 0
   client:
-    registerWithEureka: false
-    fetchRegistry: false
-    serviceUrl:
+  #   registerWithEureka: false
+  #   fetchRegistry: false
+  #   serviceUrl:
       defaultZone: ${EUREKA_SERVICE_URL:http://kostromin-mb.local:8761}/eureka/
   # instance:
   #   eurekaServerDNSName: kostromin-mb.local
   #   eurekaServerPort: 8761
   #   hostname: kostromin-mb.local
   #   nonSecurePort: ${local.server.port}
-    # leaseRenewalIntervalInSeconds: 10
-    # statusPageUrlPath: ${management.context-path}/info
-    # healthCheckUrlPath: ${management.context-path}/health
-    # virtualHostName: ${spring.application.name}
-    # appname: ${spring.application.name}
-  password: secret
+  #   leaseRenewalIntervalInSeconds: 10
+  #   statusPageUrlPath: ${management.context-path}/info
+  #   healthCheckUrlPath: ${management.context-path}/health
+  #   virtualHostName: ${spring.application.name}
+  #   appname: ${spring.application.name}
+  # password: secret
