@@ -2,11 +2,11 @@ server:
   port: ${PORT:${SERVER_PORT:0}}
 
 info:
-  id: ${spring.application.name}:${local.server.port}
+  id: ${spring.application.name}:${server.port}
 
 management:
   context-path: /admin
-  port: ${local.server.port}
+  port: ${server.port}
 endpoints:
   enabled: true
   actuator:
