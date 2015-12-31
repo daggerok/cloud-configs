@@ -31,6 +31,8 @@ eureka:
     leaseRenewalIntervalInSeconds: 10
     metadataMap:
       instanceId: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${server.port}}}
+      homePageUrlPath: /${spring.application.name}
+      statusPageUrlPath: /${spring.application.name}
   #   eurekaServerDNSName: kostromin-mb.local
   #   eurekaServerPort: 8761
   #   hostname: kostromin-mb.local
