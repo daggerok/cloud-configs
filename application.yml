@@ -23,6 +23,6 @@ eureka:
     hostname: ${INSTANCE_IP:kostromin-mb.local}
     nonSecurePort: ${INSTANCE_PORT:8080}
     leaseRenewalIntervalInSeconds: 10
-    statusPageUrlPath: ${management.context-path}/admin/info
-    healthCheckUrlPath: ${management.context-path}/admin/health
+    statusPageUrlPath: ${management.context-path}/info
+    healthCheckUrlPath: ${management.context-path}/health
   password: secret
