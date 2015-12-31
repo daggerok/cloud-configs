@@ -4,17 +4,17 @@ server:
 info:
   id: ${spring.application.name}:${server.port}
 
-management:
-  context-path: /admin
-  port: ${server.port}
-endpoints:
-  enabled: true
-  actuator:
-    enabled: true
-  restart:
-    enabled: true
-  shutdown:
-    enabled: true
+# management:
+#   context-path: /admin
+#   port: ${server.port}
+# endpoints:
+#   enabled: true
+#   actuator:
+#     enabled: true
+#   restart:
+#     enabled: true
+#   shutdown:
+#     enabled: true
 
 debug: false
 
@@ -28,8 +28,8 @@ eureka:
     hostname: kostromin-mb.local
     nonSecurePort: ${server.port}
     leaseRenewalIntervalInSeconds: 10
-    statusPageUrlPath: ${management.context-path}/info
-    healthCheckUrlPath: ${management.context-path}/health
+    # statusPageUrlPath: ${management.context-path}/info
+    # healthCheckUrlPath: ${management.context-path}/health
     virtualHostName: ${spring.application.name}
     appname: ${spring.application.name}
   password: secret
