@@ -3,8 +3,6 @@ spring:
   cloud:
     config:
       uri: http://kostromin-mb.local:8888
-
-# you must specify service name
-spring:
+  # you must specify service name
   application:
     name: ERROR! application name is require!
